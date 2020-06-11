@@ -4304,6 +4304,8 @@ A light-sensitive transistor.</description>
 <part name="GND1" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SW2" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
 <part name="GND2" library="LinnesLab-Symbols" deviceset="GND" device=""/>
+<part name="SW5" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
+<part name="GND5" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4832,6 +4834,13 @@ the desired dynamic range.</text>
 <instance part="GND2" gate="G$1" x="320.04" y="25.4" smashed="yes">
 <attribute name="VALUE" x="320.04" y="25.146" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="SW5" gate="G$1" x="347.98" y="33.02" smashed="yes">
+<attribute name="NAME" x="347.98" y="37.846" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="347.98" y="30.226" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GND5" gate="G$1" x="355.6" y="25.4" smashed="yes">
+<attribute name="VALUE" x="355.6" y="25.146" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5065,6 +5074,10 @@ the desired dynamic range.</text>
 <wire x1="38.1" y1="-68.58" x2="40.64" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="GND40" gate="G$1" pin="GND"/>
 <wire x1="40.64" y1="-68.58" x2="40.64" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="USB2" gate="G$1" pin="SHIELD"/>
+<wire x1="38.1" y1="-55.88" x2="40.64" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-55.88" x2="40.64" y2="-68.58" width="0.1524" layer="91"/>
+<junction x="40.64" y="-68.58"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -5128,6 +5141,16 @@ the desired dynamic range.</text>
 <wire x1="320.04" y1="30.48" x2="320.04" y2="27.94" width="0.1524" layer="91" style="longdash"/>
 <wire x1="317.5" y1="30.48" x2="320.04" y2="30.48" width="0.1524" layer="91" style="longdash"/>
 <junction x="320.04" y="30.48"/>
+</segment>
+<segment>
+<pinref part="SW5" gate="G$1" pin="3"/>
+<pinref part="GND5" gate="G$1" pin="GND"/>
+<wire x1="353.06" y1="33.02" x2="355.6" y2="33.02" width="0.1524" layer="91" style="longdash"/>
+<wire x1="355.6" y1="33.02" x2="355.6" y2="30.48" width="0.1524" layer="91" style="longdash"/>
+<pinref part="SW5" gate="G$1" pin="4"/>
+<wire x1="355.6" y1="30.48" x2="355.6" y2="27.94" width="0.1524" layer="91" style="longdash"/>
+<wire x1="353.06" y1="30.48" x2="355.6" y2="30.48" width="0.1524" layer="91" style="longdash"/>
+<junction x="355.6" y="30.48"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -5705,13 +5728,6 @@ the desired dynamic range.</text>
 <pinref part="U4" gate="G$1" pin="OSCI"/>
 </segment>
 </net>
-<net name="VBATT" class="0">
-<segment>
-<wire x1="284.48" y1="-17.78" x2="281.94" y2="-17.78" width="0.1524" layer="91"/>
-<label x="281.94" y="-17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U4" gate="G$1" pin="VBAT"/>
-</segment>
-</net>
 <net name="OUTPUT" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="E"/>
@@ -5735,6 +5751,11 @@ the desired dynamic range.</text>
 <pinref part="SW2" gate="G$1" pin="1"/>
 <wire x1="307.34" y1="33.02" x2="304.8" y2="33.02" width="0.1524" layer="91"/>
 <label x="304.8" y="33.02" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SW5" gate="G$1" pin="1"/>
+<wire x1="342.9" y1="33.02" x2="340.36" y2="33.02" width="0.1524" layer="91"/>
+<label x="340.36" y="33.02" size="1.27" layer="95" ratio="15" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
