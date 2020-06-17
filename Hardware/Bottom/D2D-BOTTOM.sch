@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2634,7 +2634,7 @@ and LEDs</text>
 <label x="159.0294" y="-23.749" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="TIA" class="0">
+<net name="A6/TIA" class="0">
 <segment>
 <wire x1="100.33" y1="25.146" x2="95.25" y2="25.146" width="0.1524" layer="91"/>
 <label x="95.25" y="25.146" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2652,6 +2652,11 @@ and LEDs</text>
 <pinref part="OP4" gate="G$1" pin="OUT"/>
 <wire x1="45.085" y1="98.8822" x2="47.625" y2="98.8822" width="0.1524" layer="91"/>
 <junction x="47.625" y="98.8822"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="86.36" y1="-12.7" x2="88.9" y2="-12.7" width="0.1524" layer="91"/>
+<label x="88.9" y="-12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PD.C" class="0">
@@ -2788,12 +2793,18 @@ and LEDs</text>
 <junction x="196.85" y="22.606"/>
 </segment>
 </net>
-<net name="LED.CTRL" class="0">
+<net name="D29/LED.CTRL" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="A"/>
 <wire x1="194.31" y1="27.686" x2="196.85" y2="27.686" width="0.1524" layer="91"/>
 <wire x1="196.85" y1="27.686" x2="196.85" y2="35.306" width="0.1524" layer="91"/>
 <label x="196.85" y="35.306" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="6"/>
+<wire x1="86.36" y1="-10.16" x2="88.9254" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="88.9254" y1="-10.16" x2="88.9254" y2="-9.8806" width="0.1524" layer="91"/>
+<label x="88.9" y="-10.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -2807,7 +2818,7 @@ and LEDs</text>
 <junction x="29.21" y="25.146"/>
 </segment>
 </net>
-<net name="PPG" class="0">
+<net name="A7/PPG" class="0">
 <segment>
 <wire x1="128.27" y1="25.146" x2="130.81" y2="25.146" width="0.1524" layer="91"/>
 <label x="130.81" y="25.146" size="1.27" layer="95" xref="yes"/>
@@ -2823,6 +2834,12 @@ and LEDs</text>
 <junction x="187.325" y="101.4222"/>
 <label x="187.325" y="111.5822" size="1.27" layer="95" rot="R180" xref="yes"/>
 <label x="187.325" y="91.2622" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="86.36" y1="-7.62" x2="89.408" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="89.408" y1="-7.62" x2="89.408" y2="-7.5184" width="0.1524" layer="91"/>
+<label x="88.9" y="-7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
