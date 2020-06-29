@@ -5114,7 +5114,6 @@ A light-sensitive transistor.</description>
 <part name="J1" library="LinnesLab-Connectors" deviceset="CONN_07" device="-1.27MM"/>
 <part name="SUPPLY8" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 <part name="GND5" library="LinnesLab-Symbols" deviceset="GND" device=""/>
-<part name="GPS.PWR" library="LinnesLab-Power" deviceset="MIC5504" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5745,10 +5744,6 @@ top board</text>
 </instance>
 <instance part="GND5" gate="G$1" x="20.32" y="231.14" smashed="yes">
 <attribute name="VALUE" x="20.32" y="230.886" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="GPS.PWR" gate="G$1" x="137.16" y="-5.08" smashed="yes">
-<attribute name="NAME" x="129.54" y="3.81" size="1.778" layer="95"/>
-<attribute name="VALUE" x="129.54" y="-15.24" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6937,18 +6932,6 @@ top board</text>
 <pinref part="J1" gate="G$1" pin="7"/>
 <wire x1="17.78" y1="251.46" x2="22.86" y2="251.46" width="0.1524" layer="91"/>
 <label x="22.86" y="251.46" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="D2/GPS.PWR" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="P0.02/AIN0"/>
-<wire x1="53.34" y1="88.9" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
-<label x="53.34" y="86.36" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="GPS.PWR" gate="G$1" pin="EN"/>
-<wire x1="127" y1="-10.16" x2="124.46" y2="-10.16" width="0.1524" layer="91"/>
-<label x="124.46" y="-10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
