@@ -39,7 +39,7 @@ void D2DPower::enableMP3(){
   
 }
 
-void D2DPower::disableMP3();tage(){
+void D2DPower::disableMP3(){
   
 }
  
