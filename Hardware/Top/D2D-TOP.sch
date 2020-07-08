@@ -4380,89 +4380,6 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="LinnesLab-Sensors">
-<packages>
-<package name="R0603" urn="urn:adsk.eagle:footprint:17881376/1" locally_modified="yes">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
-<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.6528" x2="1.473" y2="0.6528" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.6528" x2="1.473" y2="-0.6782" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.6782" x2="-1.473" y2="-0.6782" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.6782" x2="-1.473" y2="0.6528" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
-<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="DIOC1608X30L" urn="urn:adsk.eagle:package:17881375/3" type="model">
-<description>Chip, 1.60 X 0.80 X 0.30 mm body
-&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.30 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="R0603"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="PHOTOTRANSISTOR">
-<description>&lt;h3&gt; Phototransistor&lt;/h3&gt;
-A light-sensitive transistor.</description>
-<wire x1="-2.794" y1="1.778" x2="-1.397" y2="0.381" width="0.1524" layer="94"/>
-<wire x1="-2.921" y1="0.635" x2="-1.524" y2="-0.762" width="0.1524" layer="94"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-1.397" y="0.381"/>
-<vertex x="-2.286" y="0.762"/>
-<vertex x="-1.778" y="1.27"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-1.524" y="-0.762"/>
-<vertex x="-2.413" y="-0.381"/>
-<vertex x="-1.905" y="0.127"/>
-</polygon>
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="2.54" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.254" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PHOTOTRANSISTOR" prefix="U">
-<gates>
-<gate name="G$1" symbol="PHOTOTRANSISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="R0603">
-<connects>
-<connect gate="G$1" pin="C" pad="1"/>
-<connect gate="G$1" pin="E" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:17881375/3"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="LinnesLab-DigitalIC">
 <packages>
 <package name="SSOP20_L">
@@ -4673,11 +4590,6 @@ A light-sensitive transistor.</description>
 <part name="GND42" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="LinnesLab-Symbols" deviceset="VLIPO" device=""/>
 <part name="SUPPLY17" library="LinnesLab-Symbols" deviceset="VIN" device=""/>
-<part name="U6" library="LinnesLab-Sensors" deviceset="PHOTOTRANSISTOR" device="" package3d_urn="urn:adsk.eagle:package:17881375/3"/>
-<part name="R16" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="10k"/>
-<part name="C4" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="2.2u"/>
-<part name="GND6" library="LinnesLab-Symbols" deviceset="GND" device=""/>
-<part name="SUPPLY21" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
 <part name="SW1" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
 <part name="GND1" library="LinnesLab-Symbols" deviceset="GND" device=""/>
 <part name="SW2" library="LinnesLab-Switches" deviceset="SWITCH.MOM" device=""/>
@@ -4810,17 +4722,12 @@ From: https://learn.adafruit.com/bluefruit-nrf52-feather-learning-guide?view=all
 <text x="-25.4" y="76.2" size="1.524" layer="97" font="vector" ratio="15">Additional notes for
 advanced users only</text>
 <text x="340.36" y="149.86" size="4.318" layer="90" font="vector" ratio="15">OLED</text>
-<text x="299.72" y="-60.96" size="1.27" layer="97" rot="R270">Outputs a voltage relative
-to incident light. Will need
-to calibrate RL to based on
-the desired dynamic range.</text>
 <text x="43.18" y="167.64" size="5.08" layer="97" font="vector" ratio="15">Bluetooth (nRF52832)</text>
 <text x="340.36" y="167.64" size="5.08" layer="97" font="vector" ratio="15">OLED</text>
 <text x="53.34" y="-2.54" size="5.08" layer="97" font="vector" ratio="15">Power Management</text>
 <text x="304.8" y="43.18" size="5.08" layer="97" font="vector" ratio="15">Buttons</text>
 <text x="241.3" y="99.06" size="5.08" layer="97" font="vector" ratio="15">RTC</text>
 <text x="185.42" y="157.48" size="5.08" layer="97" font="vector" ratio="15">Cortex Debugger/Programmer</text>
-<text x="304.8" y="-45.72" size="5.08" layer="97" font="vector" ratio="15">Ambient Light</text>
 <wire x1="-48.26" y1="292.1" x2="414.02" y2="292.1" width="2.54" layer="94"/>
 <wire x1="414.02" y1="292.1" x2="414.02" y2="-99.06" width="2.54" layer="94"/>
 <wire x1="414.02" y1="-99.06" x2="-48.26" y2="-99.06" width="2.54" layer="94"/>
@@ -5090,24 +4997,6 @@ top board</text>
 </instance>
 <instance part="SUPPLY17" gate="G$1" x="63.5" y="-22.86" smashed="yes">
 <attribute name="VALUE" x="63.5" y="-20.066" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="U6" gate="G$1" x="330.2" y="-53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="330.2" y="-55.88" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="329.946" y="-55.88" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
-</instance>
-<instance part="R16" gate="G$1" x="314.96" y="-55.88" smashed="yes">
-<attribute name="NAME" x="311.15" y="-54.3814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="311.15" y="-59.182" size="1.778" layer="96"/>
-</instance>
-<instance part="C4" gate="G$1" x="312.42" y="-63.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="315.341" y="-65.024" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="310.261" y="-65.024" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND6" gate="G$1" x="302.26" y="-55.88" smashed="yes" rot="R270">
-<attribute name="VALUE" x="302.006" y="-55.88" size="1.778" layer="96" rot="R270" align="top-center"/>
-</instance>
-<instance part="SUPPLY21" gate="G$1" x="337.82" y="-55.88" smashed="yes" rot="R270">
-<attribute name="VALUE" x="340.614" y="-55.88" size="1.778" layer="96" rot="R270" align="bottom-center"/>
 </instance>
 <instance part="SW1" gate="G$1" x="284.48" y="30.48" smashed="yes">
 <attribute name="NAME" x="284.48" y="35.306" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -5431,16 +5320,6 @@ top board</text>
 <wire x1="139.7" y1="-60.96" x2="139.7" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="309.88" y1="-63.5" x2="307.34" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="-63.5" x2="307.34" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="307.34" y1="-55.88" x2="309.88" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="GND6" gate="G$1" pin="GND"/>
-<wire x1="304.8" y1="-55.88" x2="307.34" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="307.34" y="-55.88"/>
-</segment>
-<segment>
 <pinref part="SW1" gate="G$1" pin="3"/>
 <pinref part="GND1" gate="G$1" pin="GND"/>
 <wire x1="289.56" y1="30.48" x2="292.1" y2="30.48" width="0.1524" layer="91" style="longdash"/>
@@ -5652,11 +5531,6 @@ top board</text>
 <pinref part="U3" gate="G$1" pin="VBAT"/>
 <pinref part="U3" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="U6" gate="G$1" pin="C"/>
-<wire x1="335.28" y1="-55.88" x2="337.82" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="LED6" gate="G$1" pin="A"/>
@@ -5960,19 +5834,6 @@ top board</text>
 <pinref part="SUPPLY17" gate="G$1" pin="VIN"/>
 </segment>
 </net>
-<net name="OUTPUT" class="0">
-<segment>
-<pinref part="U6" gate="G$1" pin="E"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="320.04" y1="-55.88" x2="322.58" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="322.58" y1="-55.88" x2="325.12" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="-63.5" x2="322.58" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="-63.5" x2="322.58" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="322.58" y="-55.88"/>
-<label x="322.58" y="-63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
 <net name="N$23" class="0">
 <segment>
 <wire x1="279.4" y1="243.84" x2="266.7" y2="243.84" width="0.1524" layer="91"/>
@@ -6090,19 +5951,6 @@ top board</text>
 <label x="35.56" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="A4/BATT" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="P0.28/AIN4"/>
-<wire x1="38.1" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
-<label x="35.56" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="-48.26" x2="139.7" y2="-40.64" width="0.1524" layer="91"/>
-<label x="139.7" y="-45.72" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="D7/SD.CS" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.07"/>
@@ -6177,23 +6025,36 @@ top board</text>
 <label x="332.74" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D29/LED.CTRL" class="0">
+<net name="A4/PPG" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.28/AIN4"/>
+<wire x1="38.1" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
+<label x="35.56" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="7"/>
+<wire x1="17.78" y1="251.46" x2="22.86" y2="251.46" width="0.1524" layer="91"/>
+<label x="22.86" y="251.46" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="A7/BATT" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="P0.31/AIN7"/>
+<wire x1="38.1" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91" style="longdash"/>
+<label x="35.56" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="-48.26" x2="139.7" y2="-40.64" width="0.1524" layer="91"/>
+<label x="139.7" y="-45.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="A5/TIA" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="P0.29/AIN5"/>
 <wire x1="38.1" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91" style="longdash"/>
 <label x="35.56" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="5"/>
-<wire x1="17.78" y1="246.38" x2="22.86" y2="246.38" width="0.1524" layer="91"/>
-<label x="22.86" y="246.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="A6/TIA" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="P0.30/AIN6"/>
-<wire x1="38.1" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91" style="longdash"/>
-<label x="35.56" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
@@ -6201,16 +6062,16 @@ top board</text>
 <label x="22.86" y="248.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="A7/PPG" class="0">
+<net name="D30/LED.CTRL" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="P0.31/AIN7"/>
-<wire x1="38.1" y1="111.76" x2="35.56" y2="111.76" width="0.1524" layer="91" style="longdash"/>
-<label x="35.56" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="P0.30/AIN6"/>
+<wire x1="38.1" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91" style="longdash"/>
+<label x="35.56" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="7"/>
-<wire x1="17.78" y1="251.46" x2="22.86" y2="251.46" width="0.1524" layer="91"/>
-<label x="22.86" y="251.46" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="5"/>
+<wire x1="17.78" y1="246.38" x2="22.86" y2="246.38" width="0.1524" layer="91"/>
+<label x="22.86" y="246.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
